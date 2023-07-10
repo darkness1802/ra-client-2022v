@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+video {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.design-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.rs-heading {
+  @apply text-white text-lg font-bold w-full px-4 py-2 bg-lightdark my-4 flex justify-end;
+}
+
+.react-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.public-DraftEditor-content {
+  @apply text-gray-300 min-h-[150px] px-2 bg-white rounded-xl bg-heavydark !important;
+}
+
+.rdw-editor-toolbar {
+  @apply bg-lightdark border-none flex justify-center rounded-xl !important;
+}
+
+.ra-active {
+  @apply after:block after:absolute after:top-0 after:w-[3%] after:h-[100%] after:left-0 after:bg-sky-500 bg-heavydark bg-opacity-30;
+}
+
+.rs-txt {
+  @apply flex items-center gap-2;
+}
+
+.hidden-animation {
+  transition: all 0.5s;
+}
